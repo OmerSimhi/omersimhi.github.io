@@ -43,19 +43,39 @@ li {
     margin-bottom: 10px;
 }
 
-/* Profile picture */
+/* Top section: text on left, photo on right */
+
+.top-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.top-text {
+    flex: 1;
+    min-width: 0;
+}
 
 .profile-photo {
-    float: right;
-    width: 200px;
+    width: 320px;
     max-width: 45%;
     height: auto;
-    margin: 0 0 20px 30px;
     border-radius: 5px;
 }
 
-.clear {
-    clear: both;
+/* Mobile devices */
+
+@media (max-width: 650px) {
+    .top-section {
+        flex-direction: column;
+    }
+
+    .profile-photo {
+        width: 300px;
+        max-width: 100%;
+        align-self: center;
+    }
 }
 
 @media (max-width: 600px) {
