@@ -49,7 +49,7 @@ li {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 35px;
+    gap: 30px;
 }
 
 .top-text {
@@ -58,10 +58,12 @@ li {
 }
 
 .profile-photo {
-    width: 320px;
-    max-width: 45%;
+    width: 250px;
+    max-width: 35%;
     height: auto;
     border-radius: 5px;
+    flex-shrink: 0;
+    margin-left: auto;
 }
 
 /* Mobile devices */
@@ -74,16 +76,7 @@ li {
     .profile-photo {
         width: 200px;
         max-width: 100%;
-        align-self: right;
-    }
-}
-
-@media (max-width: 600px) {
-    .profile-photo {
-        float: none;
-        display: block;
-        width: 260px;
-        max-width: 100%;
-        margin: 0 auto 25px auto;
+        align-self: flex-end;
+        margin-left: 0;
     }
 }
