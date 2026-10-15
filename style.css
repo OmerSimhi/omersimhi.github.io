@@ -59,7 +59,7 @@ li {
 
 .profile-photo {
     width: 380px;
-    max-width: 35%;
+    max-width: none;
     height: auto;
     border-radius: 5px;
     flex-shrink: 0;
