@@ -42,3 +42,28 @@ hr {
 li {
     margin-bottom: 10px;
 }
+
+/* Profile picture */
+
+.profile-photo {
+    float: right;
+    width: 300px;
+    max-width: 45%;
+    height: auto;
+    margin: 0 0 20px 30px;
+    border-radius: 5px;
+}
+
+.clear {
+    clear: both;
+}
+
+@media (max-width: 600px) {
+    .profile-photo {
+        float: none;
+        display: block;
+        width: 260px;
+        max-width: 100%;
+        margin: 0 auto 25px auto;
+    }
+}
